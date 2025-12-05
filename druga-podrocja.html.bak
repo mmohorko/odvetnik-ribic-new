@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Druga Področja - Odvetnik Leon Ribič</title>
+    <meta name="description" content="Pravne storitve s področja delovnega prava - pogodbe, odpovedi, odpravnine, regres in pravo tujcev. Odvetnik Leon Ribič, Ljubljana.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <i class="fas fa-balance-scale"></i>
+                        <span>LEON RIBIČ</span>
+                    </div>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">DOMOV</a></li>
+                        <li><a href="index.html#about">O MENI</a></li>
+                        <li><a href="index.html#practice" class="active">STORITVE</a></li>
+                        <li><a href="index.html#contact">KONTAKT</a></li>
+                    </ul>
+                    <button class="btn-gold" onclick="location.href='index.html#contact'">BREZPLAČEN POSVET</button>
+                    <button class="mobile-menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Service Hero -->
+    <section class="service-hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Domov</a> / <a href="index.html#practice">Storitve</a> / <span>Druga Področja</span>
+            </div>
+            <h1 class="service-hero-title">Druga Področja</h1>
+            <p class="service-hero-subtitle">Dodatna pravna področja</p>
+        </div>
+    </section>
+
+    <!-- Service Content -->
+    <section class="service-content">
+        <div class="container">
+            <div class="service-layout">
+                <div class="service-main">
+                    <div class="service-intro">
+                        <p class="lead-text">
+                            Delovno pravo je kompleksno področje, ki ureja razmerja med delodajalci in delavci. Z izkušnjami
+                            na področju delovnega prava vam zagotavljam strokovno pomoč in svetovanje pri vseh vprašanjih,
+                            povezanih z delovnimi razmerji.
+                        </p>
+                    </div>
+
+                    <div class="service-section">
+                        <h2>Kaj zajema delovno pravo?</h2>
+                        <p>
+                            Delovno pravo ureja vse vidike delovnih razmerij - od sklenitve pogodbe o zaposlitvi do prenehanja
+                            delovnega razmerja. Področje je zelo široko in zahteva poznavanje različnih zakonov, podzakonskih
+                            aktov in sodne prakse.
+                        </p>
+                    </div>
+
+                    <div class="service-section">
+                        <h2>Storitve na področju delovnega prava</h2>
+                        <div class="service-features">
+                            <div class="feature-item">
+                                <i class="fas fa-file-contract"></i>
+                                <h3>Pogodbe o zaposlitvi</h3>
+                                <p>Priprava, pregled in svetovanje pri pogodbah o zaposlitvi ter avtorskih pogodbah. Zagotovimo, da so vaše pravice ustrezno zavarovane.</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-handshake-slash"></i>
+                                <h3>Odpovedi pogodb</h3>
+                                <p>Svetovanje in zastopanje pri rednih in izrednih odpovedih pogodb o zaposlitvi. Priprava odpovednih pisem in zastopanje pred sodišči.</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <h3>Odpravnine in regres</h3>
+                                <p>Svetovanje pri izračunu in uveljavljanju odpravnin, regresa, jubilejnih nagrad in drugih prejemkov iz delovnega razmerja.</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-balance-scale-right"></i>
+                                <h3>Pravice in obveznosti</h3>
+                                <p>Svetovanje o pravicah in obveznostih delavcev in delodajalcev, delovnem času, dopustih, bolniški odsotnosti in drugih vidikih delovnega razmerja.</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-gavel"></i>
+                                <h3>Delovni spori</h3>
+                                <p>Zastopanje v delovnih sporih pred delovno-socialnimi sodišči. Mediacija in reševanje sporov pred eskalacijo.</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-globe"></i>
+                                <h3>Pravo tujcev</h3>
+                                <p>Svetovanje pri zaposlovanju tujih delavcev, dovoljenja za delo, napotitev delavcev v tujino in druga vprašanja mednarodnega delovnega prava.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-section highlight-box">
+                        <h2>Za delodajalce</h2>
+                        <ul class="check-list">
+                            <li><i class="fas fa-check"></i> Priprava internih aktov podjetja (pravilniki, sistematizacija)</li>
+                            <li><i class="fas fa-check"></i> Svetovanje pri zaposlovanju in prenehanju delovnih razmerij</li>
+                            <li><i class="fas fa-check"></i> Zastopanje v inšpekcijskih postopkih</li>
+                            <li><i class="fas fa-check"></i> Svetovanje pri kolektivnih pogodbah</li>
+                            <li><i class="fas fa-check"></i> Prestrukturiranje kadrov in odpuščanje</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-section highlight-box">
+                        <h2>Za delavce</h2>
+                        <ul class="check-list">
+                            <li><i class="fas fa-check"></i> Pregled in svetovanje pri pogodbah o zaposlitvi</li>
+                            <li><i class="fas fa-check"></i> Uveljavljanje plač in drugih prejemkov</li>
+                            <li><i class="fas fa-check"></i> Izpodbijanje nezakonitih odpovedi</li>
+                            <li><i class="fas fa-check"></i> Uveljavljanje odškodnin zaradi nezakonitega ravnanja delodajalca</li>
+                            <li><i class="fas fa-check"></i> Zastopanje v sporih pred delovnimi sodišči</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-section">
+                        <h2>Zakaj izbrati Leon Ribič za delovno pravo?</h2>
+                        <p>
+                            Z izkušnjami na področju delovnega prava zagotavljam hiter odziv in učinkovito rešitev vaših pravnih
+                            vprašanj. Razumem, da so delovna razmerja pogosto občutljiva tema in zahtevajo diskretno ter
+                            strokovno obravnavo.
+                        </p>
+                        <p>
+                            Vsak primer obravnavam individualno in si prizadevam za najboljše možne rezultate, bodisi gre za
+                            preventivno svetovanje bodisi za zastopanje v sodnih postopkih.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service-sidebar">
+                    <div class="sidebar-widget">
+                        <h3>Druge storitve</h3>
+                        <ul class="service-menu">
+                            <li class="active"><a href="delovno-pravo.html"><i class="fas fa-briefcase"></i> Delovno pravo</a></li>
+                            <li><a href="gospodarsko-pravo.html"><i class="fas fa-building"></i> Gospodarsko pravo</a></li>
+                            <li><a href="pogodbe.html"><i class="fas fa-file-contract"></i> Pogodbe</a></li>
+                            <li><a href="izvrsba-insolventnost.html"><i class="fas fa-gavel"></i> Izvršba in insolventnost</a></li>
+                            <li><a href="bancnistvo-finance.html"><i class="fas fa-university"></i> Bančništvo in finance</a></li>
+                            <li><a href="civilno-pravo.html"><i class="fas fa-balance-scale"></i> Civilno pravo</a></li>
+                            <li><a href="it-pravo.html"><i class="fas fa-laptop-code"></i> IT pravo</a></li>
+                            <li><a href="druga-podrocja.html"><i class="fas fa-ellipsis-h"></i> Druga področja</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-widget cta-widget">
+                        <h3>Potrebujete pravno pomoč?</h3>
+                        <p>Pokličite za brezplačen posvet</p>
+                        <a href="tel:+38631633663" class="sidebar-phone">
+                            <i class="fas fa-phone"></i> +386 31 633 663
+                        </a>
+                        <a href="index.html#contact" class="btn-gold-sidebar">Pošljite sporočilo</a>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h3>Delovni čas</h3>
+                        <ul class="office-hours">
+                            <li><strong>Ponedeljek - Petek</strong><br>9:00 - 17:00</li>
+                            <li><strong>Sobota - Nedelja</strong><br>Zaprto</li>
+                        </ul>
+                        <p style="font-size: 14px; margin-top: 15px; color: #666;">
+                            <i class="fas fa-info-circle"></i> Sestanki po predhodnem dogovoru
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-banner">
+        <div class="container">
+            <div class="cta-content">
+                <h2>POTREBUJETE POMOČ PRI DELOVNEM PRAVU?</h2>
+                <p>Kontaktirajte me za brezplačen posvet in strokovno svetovanje</p>
+            </div>
+            <div class="cta-phone">
+                <i class="fas fa-phone-alt"></i>
+                <span>+386 31 633 663</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-balance-scale"></i>
+                        <span>LEON RIBIČ</span>
+                    </div>
+                    <p class="footer-about">
+                        Odvetniška pisarna Leon Ribič se nahaja v Ljubljani in nudi celovite pravne storitve
+                        na različnih področjih prava. Pravna pomoč za vsakogar - profesionalno, učinkovito in zanesljivo.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:info@ribic-arh.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>PODROČJA DELA</h3>
+                    <ul>
+                        <li><a href="delovno-pravo.html">Delovno pravo</a></li>
+                        <li><a href="gospodarsko-pravo.html">Gospodarsko pravo</a></li>
+                        <li><a href="pogodbe.html">Pogodbe</a></li>
+                        <li><a href="izvrsba-insolventnost.html">Izvršba in insolventnost</a></li>
+                        <li><a href="bancnistvo-finance.html">Bančništvo in finance</a></li>
+                        <li><a href="it-pravo.html">IT pravo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>HITRE POVEZAVE</h3>
+                    <ul>
+                        <li><a href="index.html">Domov</a></li>
+                        <li><a href="index.html#about">O meni</a></li>
+                        <li><a href="index.html#practice">Storitve</a></li>
+                        <li><a href="index.html#contact">Kontakt</a></li>
+                        <li><a href="https://ribiclaw.com" target="_blank">Spletna stran</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>KONTAKT</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Tomšičeva ulica 1<br>1000 Ljubljana, Slovenija</li>
+                        <li><i class="fas fa-phone"></i> +386 31 633 663</li>
+                        <li><i class="fas fa-envelope"></i> info@ribic-arh.com</li>
+                        <li><i class="fas fa-envelope"></i> odvetnik.leon.ribic@gmail.com</li>
+                        <li><i class="fas fa-clock"></i> Pon - Pet: 9:00 - 17:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Odvetniška pisarna Leon Ribič. Vse pravice pridržane. | Vpisan v imenik Odvetniške zbornice Slovenije</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

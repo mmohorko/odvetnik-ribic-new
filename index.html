@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odvetnik Leon Ribič - Pravna pomoč za vsakogar</title>
+    <meta name="description" content="Odvetniška pisarna Leon Ribič v Ljubljani. Specializirani za delovno pravo, gospodarsko pravo, pogodbe, izvršbo in insolventnost.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <a href="#home" class="logo-text">
+                            <span class="logo-main">LEON RIBIČ</span>
+                            <span class="logo-subtitle">ODVETNIK</span>
+                        </a>
+                    </div>
+                    <ul class="nav-menu">
+                        <li><a href="#home" class="active">DOMOV</a></li>
+                        <li><a href="#about">O MENI</a></li>
+                        <li class="dropdown">
+                            <a href="#practice" class="dropdown-toggle">STORITVE <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="delovno-pravo.html"><i class="fas fa-briefcase"></i> Delovno pravo</a></li>
+                                <li><a href="gospodarsko-pravo.html"><i class="fas fa-building"></i> Gospodarsko pravo</a></li>
+                                <li><a href="pogodbe.html"><i class="fas fa-file-contract"></i> Pogodbe</a></li>
+                                <li><a href="izvrsba-insolventnost.html"><i class="fas fa-gavel"></i> Izvršba in insolventnost</a></li>
+                                <li><a href="bancnistvo-finance.html"><i class="fas fa-university"></i> Bančništvo in finance</a></li>
+                                <li><a href="civilno-pravo.html"><i class="fas fa-balance-scale"></i> Splošno civilno pravo</a></li>
+                                <li><a href="it-pravo.html"><i class="fas fa-laptop-code"></i> IT pravo</a></li>
+                                <li><a href="druga-podrocja.html"><i class="fas fa-ellipsis-h"></i> Druga področja</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="kontakt.html">KONTAKT</a></li>
+                    </ul>
+                    <div class="header-actions">
+                        <a href="tel:+38631633663" class="header-phone">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+386 31 633 663</span>
+                        </a>
+                        <button class="btn-gold" onclick="window.location.href='kontakt.html#contact-form'">BREZPLAČEN POSVET</button>
+                    </div>
+                    <button class="mobile-menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-subtitle">ODVETNIŠKA PISARNA V LJUBLJANI</p>
+                <h1 class="hero-title">LEON RIBIČ</h1>
+                <p class="hero-description">Pravna pomoč za vsakogar<br>Izkušen odvetnik za vse vaše pravne izzive</p>
+                <button class="btn-gold-large" onclick="location.href='#contact'">PRIDOBI POSVET</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3 class="section-subtitle">O ODVETNIKU</h3>
+                    <h2 class="section-title">Leon Ribič<br>Odvetnik v Ljubljani</h2>
+                    <p class="about-text">
+                        Sem Leon Ribič, odvetnik vpisan v imenik Odvetniške zbornice Slovenije od 24. januarja 2023. Moja odvetniška pisarna
+                        se nahaja v središču Ljubljane, kjer strankam nudim celovite pravne storitve na različnih področjih prava.
+                    </p>
+                    <p class="about-text">
+                        Specializiran sem za delovno pravo, gospodarsko pravo, pogodbe, izvršbo in insolventnost ter bančništvo in finance.
+                        Moja predanost je v zagotavljanju kakovostne pravne pomoči, prilagojene potrebam vsakega posameznika ali podjetja.
+                        Verjamem, da je vsak pravni izziv edinstven in si zato prizadevam za osebni pristop ter učinkovite rešitve.
+                    </p>
+                    <p class="about-text">
+                        Z izkušnjami na področju prava podjetij, M&A transakcij, intelektualne lastnine ter regulatornih zahtev nudim
+                        celovito podporo tako domačim kot tujim strankam. Moj moto je "Pravna pomoč za vsakogar" - zavezujem se k
+                        dostopnosti, profesionalnosti in uspešnim rezultatom.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="https://ribiclaw.com/wp-content/uploads/2024/10/Leon-Ribic-odvetnik-scaled.jpg" alt="Odvetnik Leon Ribič">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legal Practice Areas -->
+    <section class="practice-areas" id="practice">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title-center">Področja Pravne Pomoči</h2>
+                <p style="text-align: center; max-width: 800px; margin: 0 auto 40px; color: #666;">Specializirani za različna pravna področja z izkušnjami in predanostjo k doseganju najboljših rezultatov</p>
+            </div>
+            <div class="practice-grid">
+                <a href="delovno-pravo.html" class="practice-card-link">
+                    <div class="practice-card">
+                        <div class="practice-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>DELOVNO PRAVO</h3>
+                        <p>Celovita pomoč na področju delovnega prava - pravice in obveznosti delavcev ter delodajalcev, pogodbe o zaposlitvi, odpovedi, odpravnine, regres in pravo tujcev.</p>
+                    </div>
+                </a>
+                <a href="gospodarsko-pravo.html" class="practice-card-link">
+                    <div class="practice-card">
+                        <div class="practice-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>GOSPODARSKO PRAVO</h3>
+                        <p>Pravno svetovanje pri poslovnih transakcijah, prevzemi, združitve (M&A), intelektualna lastnina in regulatorne zahteve za podjetja vseh velikosti.</p>
+                    </div>
+                </a>
+                <a href="pogodbe.html" class="practice-card-link">
+                    <div class="practice-card">
+                        <div class="practice-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <h3>POGODBE</h3>
+                        <p>Izkušeni odvetniki pri sestavi pogodb in pripadajoče dokumentacije. Nudimo svetovanje in pripravo vseh vrst pogodb po meri vaših potreb.</p>
+                    </div>
+                </a>
+                <a href="izvrsba-insolventnost.html" class="practice-card-link">
+                    <div class="practice-card">
+                        <div class="practice-icon">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <h3>IZVRŠBA IN INSOLVENTNOST</h3>
+                        <p>Svetovanje in zastopanje upnikov ter dolžnikov pri izvršbah in insolvenčnih postopkih. Učinkovite rešitve za finančne težave.</p>
+                    </div>
+                </a>
+                <a href="bancnistvo-finance.html" class="practice-card-link">
+                    <div class="practice-card">
+                        <div class="practice-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3>BANČNIŠTVO IN FINANCE</h3>
+                        <p>Specializirano pravno svetovanje na področju bančnega prava, finančnih instrumentov in bančnih transakcij.</p>
+                    </div>
+                </a>
+                <a href="civilno-pravo.html" class="practice-card-link">
+                    <div class="practice-card">
+                        <div class="practice-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h3>SPLOŠNO CIVILNO PRAVO</h3>
+                        <p>Celovito zastopanje v civilnopravnih zadevah, vključno z nepremičninskim pravom, dednim pravom in drugimi civilnimi spori.</p>
+                    </div>
+                </a>
+                <a href="it-pravo.html" class="practice-card-link">
+                    <div class="practice-card">
+                        <div class="practice-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>PRAVO INFORMACIJSKE TEHNOLOGIJE</h3>
+                        <p>Pravna pomoč na področju IT prava, varstva podatkov (GDPR), licenčnih pogodb in e-poslovanja.</p>
+                    </div>
+                </a>
+                <a href="druga-podrocja.html" class="practice-card-link">
+                    <div class="practice-card">
+                        <div class="practice-icon">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                        <h3>DRUGA PODROČJA</h3>
+                        <p>Če potrebujete pravno pomoč na drugem področju, nas kontaktirajte. Radi vam bomo svetovali ali vam pomagali najti ustreznega strokovnjaka.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+        <div class="why-overlay"></div>
+        <div class="container">
+            <h2 class="why-title">Zakaj Izbrati Leon Ribič?</h2>
+            <p class="why-description">
+                Zagotavljam osebni pristop in strokovno pravno pomoč, prilagojeno vašim potrebam.<br>
+                Z izkušnjami in predanostjo k uspehu vašega primera.
+            </p>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3 class="stat-number">2023</h3>
+                    <p class="stat-label">Vpis v Imenik</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number">8+</h3>
+                    <p class="stat-label">Področij Prava</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number">100%</h3>
+                    <p class="stat-label">Predanost</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number">24/7</h3>
+                    <p class="stat-label">Dostopnost</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section" id="contact">
+        <div class="container">
+            <div class="form-wrapper">
+                <h2 class="form-title">Brezplačen Posvet</h2>
+                <p class="form-subtitle">Tukaj sem, da odgovorim na vsa vaša vprašanja</p>
+                <form class="consultation-form">
+                    <div class="form-row">
+                        <input type="text" placeholder="Ime in Priimek" class="form-input" required>
+                        <input type="email" placeholder="E-pošta" class="form-input" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="tel" placeholder="Telefon" class="form-input" required>
+                        <select class="form-input" required>
+                            <option value="">Izberite področje</option>
+                            <option value="delovno">Delovno pravo</option>
+                            <option value="gospodarsko">Gospodarsko pravo</option>
+                            <option value="pogodbe">Pogodbe</option>
+                            <option value="izvrsba">Izvršba in insolventnost</option>
+                            <option value="bancnistvo">Bančništvo in finance</option>
+                            <option value="civilno">Splošno civilno pravo</option>
+                            <option value="it">Pravo informacijske tehnologije</option>
+                            <option value="drugo">Drugo</option>
+                        </select>
+                    </div>
+                    <textarea placeholder="Sporočilo" class="form-textarea" rows="5" required></textarea>
+                    <button type="submit" class="btn-submit">POŠLJI</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Cards -->
+    <section class="services-dark">
+        <div class="container">
+            <h2 class="services-main-title">Kaj Ponujam</h2>
+            <div class="services-cards-grid">
+                <div class="service-dark-card">
+                    <div class="service-icon-gold">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>OSEBNI PRISTOP</h3>
+                    <p>Vsak primer obravnavam individualno z osebnim pristopom in polno predanostjo doseganju najboljših rezultatov za moje stranke.</p>
+                </div>
+                <div class="service-dark-card">
+                    <div class="service-icon-gold">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>STROKOVNO SVETOVANJE</h3>
+                    <p>Zagotavljam strokovno pravno svetovanje, ki temelji na poznavanju zakonodaje in dolgoletnih izkušnjah na različnih pravnih področjih.</p>
+                </div>
+                <div class="service-dark-card">
+                    <div class="service-icon-gold">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>HITRA ODZIVNOST</h3>
+                    <p>Razumem, da so pravne zadeve pogosto nujne. Zavezujem se k hitri odzivnosti in učinkoviti komunikaciji z mojimi strankami.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-banner">
+        <div class="container">
+            <div class="cta-content">
+                <h2>POTREBUJETE PRAVNO POMOČ?</h2>
+                <p>Pokličite za brezplačen posvet in strokovno svetovanje</p>
+            </div>
+            <div class="cta-phone">
+                <i class="fas fa-phone-alt"></i>
+                <span>+386 31 633 663</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="logo-text">
+                            <span class="logo-main">LEON RIBIČ</span>
+                            <span class="logo-subtitle">ODVETNIK</span>
+                        </div>
+                    </div>
+                    <p class="footer-about">
+                        Odvetniška pisarna Leon Ribič se nahaja v Ljubljani in nudi celovite pravne storitve
+                        na različnih področjih prava. Pravna pomoč za vsakogar - profesionalno, učinkovito in zanesljivo.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:info@ribic-arh.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>PODROČJA DELA</h3>
+                    <ul>
+                        <li><a href="#practice">Delovno pravo</a></li>
+                        <li><a href="#practice">Gospodarsko pravo</a></li>
+                        <li><a href="#practice">Pogodbe</a></li>
+                        <li><a href="#practice">Izvršba in insolventnost</a></li>
+                        <li><a href="#practice">Bančništvo in finance</a></li>
+                        <li><a href="#practice">IT pravo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>HITRE POVEZAVE</h3>
+                    <ul>
+                        <li><a href="#home">Domov</a></li>
+                        <li><a href="#about">O meni</a></li>
+                        <li><a href="#practice">Storitve</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                        <li><a href="https://ribiclaw.com" target="_blank">Spletna stran</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>KONTAKT</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Tomšičeva ulica 1<br>1000 Ljubljana, Slovenija</li>
+                        <li><i class="fas fa-phone"></i> +386 31 633 663</li>
+                        <li><i class="fas fa-envelope"></i> info@ribic-arh.com</li>
+                        <li><i class="fas fa-envelope"></i> odvetnik.leon.ribic@gmail.com</li>
+                        <li><i class="fas fa-clock"></i> Pon - Pet: 9:00 - 17:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Odvetniška pisarna Leon Ribič. Vse pravice pridržane. | Vpisan v imenik Odvetniške zbornice Slovenije</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
