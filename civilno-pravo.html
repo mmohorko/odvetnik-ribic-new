@@ -41,9 +41,33 @@
                         </li>
                         <li><a href="kontakt.html">KONTAKT</a></li>
                     </ul>
-                    <button class="btn-gold" onclick="location.href='index.html#contact'">BREZPLAČEN POSVET</button>
-                    <button class="mobile-menu-toggle">
-                        <i class="fas fa-bars"></i>
+                    <div class="mobile-menu-contact">
+                        <a href="tel:+38631633663" class="mobile-contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <div class="contact-label">Telefon</div>
+                                <div class="contact-value">+386 31 633 663</div>
+                            </div>
+                        </a>
+                        <a href="mailto:info@ribiclaw.com" class="mobile-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value">info@ribiclaw.com</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="header-actions">
+                        <a href="tel:+38631633663" class="header-phone">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+386 31 633 663</span>
+                        </a>
+                        <button class="btn-gold" onclick="location.href='index.html#contact'">BREZPLAČEN POSVET</button>
+                    </div>
+                    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
                     </button>
                 </div>
             </div>
@@ -58,7 +82,7 @@
                 <a href="index.html">Domov</a> / <a href="index.html#practice">Storitve</a> / <span>Splošno Civilno Pravo</span>
             </div>
             <h1 class="service-hero-title">Splošno Civilno Pravo</h1>
-            <p class="service-hero-subtitle">Civilnopravno zastopanje</p>
+            <p class="service-hero-subtitle">Celovito civilnopravno svetovanje in zastopanje v sporih</p>
         </div>
     </section>
 
@@ -69,89 +93,92 @@
                 <div class="service-main">
                     <div class="service-intro">
                         <p class="lead-text">
-                            Delovno pravo je kompleksno področje, ki ureja razmerja med delodajalci in delavci. Z izkušnjami
-                            na področju delovnega prava vam zagotavljam strokovno pomoč in svetovanje pri vseh vprašanjih,
-                            povezanih z delovnimi razmerji.
+                            Civilno pravo ureja razmerja med posamezniki in pravnimi osebami v vsakdanjem življenju - od nepremičnin,
+                            dedovanja, odškodnin, do sosedskih sporov in varstva osebnostnih pravic. Nudim celovito pravno pomoč pri
+                            preventivnem svetovanju in učinkovito zastopanje v sodnih postopkih.
                         </p>
                     </div>
 
                     <div class="service-section">
-                        <h2>Kaj zajema delovno pravo?</h2>
+                        <h2>Kaj zajema civilno pravo?</h2>
                         <p>
-                            Delovno pravo ureja vse vidike delovnih razmerij - od sklenitve pogodbe o zaposlitvi do prenehanja
-                            delovnega razmerja. Področje je zelo široko in zahteva poznavanje različnih zakonov, podzakonskih
-                            aktov in sodne prakse.
+                            Civilno pravo je najobsežnejša pravna panoga, ki ureja zasebna razmerja med fizičnimi in pravnimi osebami.
+                            Temelji na Obligacijskem zakoniku (OZ), Stvarnopravnem zakoniku (SPZ), Zakonu o dedovanju (ZD) in številnih
+                            drugih predpisih. Zajema premoženjska razmerja, odgovornost za škodo, dedovanje, družinsko pravo,
+                            nepremičninsko pravo in varstvo osebnostnih pravic.
                         </p>
                     </div>
 
                     <div class="service-section">
-                        <h2>Storitve na področju delovnega prava</h2>
+                        <h2>Storitve na področju civilnega prava</h2>
                         <div class="service-features">
                             <div class="feature-item">
-                                <i class="fas fa-file-contract"></i>
-                                <h3>Pogodbe o zaposlitvi</h3>
-                                <p>Priprava, pregled in svetovanje pri pogodbah o zaposlitvi ter avtorskih pogodbah. Zagotovimo, da so vaše pravice ustrezno zavarovane.</p>
+                                <i class="fas fa-hands-helping"></i>
+                                <h3>Odškodnine</h3>
+                                <p>Uveljavljanje odškodnin za materialno in nematerialno škodo (bolečine, invalidnost, izguba zaslužka), odškodnine po avtomobilskih nesrečah, medicinski napaki ali drugih povzročitvah škode.</p>
                             </div>
                             <div class="feature-item">
-                                <i class="fas fa-handshake-slash"></i>
-                                <h3>Odpovedi pogodb</h3>
-                                <p>Svetovanje in zastopanje pri rednih in izrednih odpovedih pogodb o zaposlitvi. Priprava odpovednih pisem in zastopanje pred sodišči.</p>
+                                <i class="fas fa-monument"></i>
+                                <h3>Dedovanje</h3>
+                                <p>Sestava oporok, svetovanje pri dednih sporih, izpodbijanje oporok, razdelitev zapuščine, varstvo dednopravnih pričakovanj in zastopanje v zapuščinskih postopkih.</p>
                             </div>
                             <div class="feature-item">
-                                <i class="fas fa-money-bill-wave"></i>
-                                <h3>Odpravnine in regres</h3>
-                                <p>Svetovanje pri izračunu in uveljavljanju odpravnin, regresa, jubilejnih nagrad in drugih prejemkov iz delovnega razmerja.</p>
+                                <i class="fas fa-house-user"></i>
+                                <h3>Nepremičninsko pravo</h3>
+                                <p>Spori o lastništvu, služnostne pravice, sosedski spori, meje med zemljišči, uzurpacije, stvarne služnosti in reševanje zemljiškoknjižnih zadev.</p>
                             </div>
                             <div class="feature-item">
-                                <i class="fas fa-balance-scale-right"></i>
-                                <h3>Pravice in obveznosti</h3>
-                                <p>Svetovanje o pravicah in obveznostih delavcev in delodajalcev, delovnem času, dopustih, bolniški odsotnosti in drugih vidikih delovnega razmerja.</p>
+                                <i class="fas fa-user-shield"></i>
+                                <h3>Varstvo osebnostnih pravic</h3>
+                                <p>Zaščita dobrega imena in časti, zaščita zasebnosti, uveljavljanje pravic ob kršitvah osebnostnih pravic, obrekovanje in razžalitev, nedovoljeno objavljanje fotografij ali podatkov.</p>
                             </div>
                             <div class="feature-item">
-                                <i class="fas fa-gavel"></i>
-                                <h3>Delovni spori</h3>
-                                <p>Zastopanje v delovnih sporih pred delovno-socialnimi sodišči. Mediacija in reševanje sporov pred eskalacijo.</p>
+                                <i class="fas fa-people-arrows"></i>
+                                <h3>Civilni spori</h3>
+                                <p>Zastopanje v vseh vrstah civilnih sporov pred sodišči - obligacijski spori, pogodbeni spori, odškodninski spori, nepremičninski spori in drugi civilni postopki.</p>
                             </div>
                             <div class="feature-item">
-                                <i class="fas fa-globe"></i>
-                                <h3>Pravo tujcev</h3>
-                                <p>Svetovanje pri zaposlovanju tujih delavcev, dovoljenja za delo, napotitev delavcev v tujino in druga vprašanja mednarodnega delovnega prava.</p>
+                                <i class="fas fa-heart"></i>
+                                <h3>Družinsko pravo</h3>
+                                <p>Svetovanje pri razvezah zakonske zveze, ločitvah zunajzakonskih skupnosti, delitvi premoženja, preživninskih zahtevkih in sporih glede stikov z otroki.</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="service-section highlight-box">
-                        <h2>Za delodajalce</h2>
+                        <h2>Odškodninski spori</h2>
                         <ul class="check-list">
-                            <li><i class="fas fa-check"></i> Priprava internih aktov podjetja (pravilniki, sistematizacija)</li>
-                            <li><i class="fas fa-check"></i> Svetovanje pri zaposlovanju in prenehanju delovnih razmerij</li>
-                            <li><i class="fas fa-check"></i> Zastopanje v inšpekcijskih postopkih</li>
-                            <li><i class="fas fa-check"></i> Svetovanje pri kolektivnih pogodbah</li>
-                            <li><i class="fas fa-check"></i> Prestrukturiranje kadrov in odpuščanje</li>
+                            <li><i class="fas fa-check"></i> Odškodnine po prometnih nesrečah (telesne poškodbe, materialna škoda)</li>
+                            <li><i class="fas fa-check"></i> Odškodnine za bolečine, invalidnost in izgubljeni zaslužek</li>
+                            <li><i class="fas fa-check"></i> Medicinske napake in odgovornost zdravstvenih delavcev</li>
+                            <li><i class="fas fa-check"></i> Odškodnine za povzročeno škodo na premoženju</li>
+                            <li><i class="fas fa-check"></i> Regresni zahtevki in poboti odškodnin</li>
                         </ul>
                     </div>
 
                     <div class="service-section highlight-box">
-                        <h2>Za delavce</h2>
+                        <h2>Dedovanje in družinsko pravo</h2>
                         <ul class="check-list">
-                            <li><i class="fas fa-check"></i> Pregled in svetovanje pri pogodbah o zaposlitvi</li>
-                            <li><i class="fas fa-check"></i> Uveljavljanje plač in drugih prejemkov</li>
-                            <li><i class="fas fa-check"></i> Izpodbijanje nezakonitih odpovedi</li>
-                            <li><i class="fas fa-check"></i> Uveljavljanje odškodnin zaradi nezakonitega ravnanja delodajalca</li>
-                            <li><i class="fas fa-check"></i> Zastopanje v sporih pred delovnimi sodišči</li>
+                            <li><i class="fas fa-check"></i> Sestava oporok in načrtovanje dedovanja</li>
+                            <li><i class="fas fa-check"></i> Dedni spori in delitev zapuščine</li>
+                            <li><i class="fas fa-check"></i> Razveza zakonske zveze in delitev premoženja</li>
+                            <li><i class="fas fa-check"></i> Preživninski zahtevki (otroci, zakonec)</li>
+                            <li><i class="fas fa-check"></i> Stiki z otrokom in uveljavljanje starševskih pravic</li>
                         </ul>
                     </div>
 
                     <div class="service-section">
-                        <h2>Zakaj izbrati Leon Ribič za delovno pravo?</h2>
+                        <h2>Zakaj izbrati odvetniško pisarno Leon Ribič za civilno pravo?</h2>
                         <p>
-                            Z izkušnjami na področju delovnega prava zagotavljam hiter odziv in učinkovito rešitev vaših pravnih
-                            vprašanj. Razumem, da so delovna razmerja pogosto občutljiva tema in zahtevajo diskretno ter
-                            strokovno obravnavo.
+                            Civilnopravni spori so pogosto zelo osebne narave - dedovanje po bližnjih, družinski konflikti, poškodbe,
+                            sosedski spori. Razumem občutljivost teh situacij in zagotavljam diskretno, empatično in hkrati
+                            strokovno obravnavo vsakega primera.
                         </p>
                         <p>
-                            Vsak primer obravnavam individualno in si prizadevam za najboljše možne rezultate, bodisi gre za
-                            preventivno svetovanje bodisi za zastopanje v sodnih postopkih.
+                            Ne glede na to, ali potrebujete preventivno svetovanje (sestava oporoke, pregled pogodbe) ali
+                            zastopanje v sodnem sporu (odškodnina, dedovanje, razveza), vam zagotavljam jasno komunikacijo,
+                            realistične ocene in učinkovito zastopanje vaših interesov. Vsak primer obravnavam individualno in
+                            iščem optimalne rešitve - tako zunajsodno poravnavo kot trdno zastopanje pred sodišči.
                         </p>
                     </div>
                 </div>
@@ -160,12 +187,12 @@
                     <div class="sidebar-widget">
                         <h3>Druge storitve</h3>
                         <ul class="service-menu">
-                            <li class="active"><a href="delovno-pravo.html"><i class="fas fa-briefcase"></i> Delovno pravo</a></li>
+                            <li><a href="delovno-pravo.html"><i class="fas fa-briefcase"></i> Delovno pravo</a></li>
                             <li><a href="gospodarsko-pravo.html"><i class="fas fa-building"></i> Gospodarsko pravo</a></li>
                             <li><a href="pogodbe.html"><i class="fas fa-file-contract"></i> Pogodbe</a></li>
                             <li><a href="izvrsba-insolventnost.html"><i class="fas fa-gavel"></i> Izvršba in insolventnost</a></li>
                             <li><a href="bancnistvo-finance.html"><i class="fas fa-university"></i> Bančništvo in finance</a></li>
-                            <li><a href="civilno-pravo.html"><img src="https://ribiclaw.com/wp-content/uploads/2024/10/Leon_logo_white_outline-300x116.png" alt="Leon Ribič Logo" class="logo-image"> Civilno pravo</a></li>
+                            <li class="active"><a href="civilno-pravo.html"><i class="fas fa-balance-scale"></i> Civilno pravo</a></li>
                             <li><a href="it-pravo.html"><i class="fas fa-laptop-code"></i> IT pravo</a></li>
                             <li><a href="druga-podrocja.html"><i class="fas fa-ellipsis-h"></i> Druga področja</a></li>
                         </ul>
@@ -199,8 +226,8 @@
     <section class="cta-banner">
         <div class="container">
             <div class="cta-content">
-                <h2>POTREBUJETE POMOČ PRI DELOVNEM PRAVU?</h2>
-                <p>Kontaktirajte me za brezplačen posvet in strokovno svetovanje</p>
+                <h2>POTREBUJETE POMOČ PRI CIVILNOPRAVNIH ZADEVAH?</h2>
+                <p>Kontaktirajte me za brezplačen posvet pri odškodninah, dedovanju ali družinskih sporih</p>
             </div>
             <div class="cta-phone">
                 <i class="fas fa-phone-alt"></i>
@@ -225,7 +252,7 @@
                     <div class="social-links">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="mailto:info@ribic-arh.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="mailto:info@ribiclaw.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
                 <div class="footer-column">
@@ -246,17 +273,14 @@
                         <li><a href="index.html#about">O meni</a></li>
                         <li><a href="index.html#practice">Storitve</a></li>
                         <li><a href="index.html#contact">Kontakt</a></li>
-                        <li><a href="https://ribiclaw.com" target="_blank">Spletna stran</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>KONTAKT</h3>
                     <ul class="contact-info">
-                        <li><i class="fas fa-map-marker-alt"></i> Tomšičeva ulica 1<br>1000 Ljubljana, Slovenija</li>
-                        <li><i class="fas fa-phone"></i> +386 31 633 663</li>
-                        <li><i class="fas fa-envelope"></i> info@ribic-arh.com</li>
-                        <li><i class="fas fa-envelope"></i> odvetnik.leon.ribic@gmail.com</li>
-                        <li><i class="fas fa-clock"></i> Pon - Pet: 9:00 - 17:00</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Odvetnik Leon Ribič<br>Tomšičeva ulica 1<br>1000 Ljubljana</li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info.com">info.com</a></li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+38631633663">+386 31 633 663</a></li>
                     </ul>
                 </div>
             </div>
@@ -264,6 +288,9 @@
                 <p>&copy; 2024 Odvetniška pisarna Leon Ribič. Vse pravice pridržane. | Vpisan v imenik Odvetniške zbornice Slovenije</p>
             </div>
         </div>
+
+        <!-- AI Agent Chat Widget -->
+        <script src="https://sogymswkppapgobreycf.supabase.co/functions/v1/widget/dbb506b1-d793-49d2-90c4-8c8664b25384/widget.js?v=1764936603125" async></script>
     </footer>
 
     <script src="script.js"></script>

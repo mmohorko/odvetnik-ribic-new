@@ -1,54 +1,61 @@
-// Mobile Menu Toggle - Simple and Direct
-window.addEventListener('load', function() {
-    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+// Hamburger Menu Toggle
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM loaded');
+
+    const hamburger = document.getElementById('hamburger');
     const navMenu = document.querySelector('.nav-menu');
-    const body = document.body;
 
-    console.log('Mobile menu toggle:', mobileMenuToggle);
-    console.log('Nav menu:', navMenu);
+    console.log('Hamburger element:', hamburger);
+    console.log('Nav menu element:', navMenu);
 
-    if (mobileMenuToggle) {
-        mobileMenuToggle.addEventListener('click', function(e) {
-            e.preventDefault();
-            console.log('Hamburger clicked!');
-
-            if (navMenu) {
-                const isActive = navMenu.classList.contains('active');
-
-                if (isActive) {
-                    navMenu.classList.remove('active');
-                    body.style.overflow = '';
-                    console.log('Menu closed');
-                } else {
-                    navMenu.classList.add('active');
-                    body.style.overflow = 'hidden';
-                    console.log('Menu opened');
-                }
-            }
-        });
+    if (!hamburger) {
+        console.error('ERROR: Hamburger button not found!');
+        return;
     }
 
-    // Mobile dropdown toggle
-    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
-    dropdownToggles.forEach(function(toggle) {
-        toggle.addEventListener('click', function(e) {
-            if (window.innerWidth <= 1024) {
-                e.preventDefault();
-                const dropdown = toggle.closest('.dropdown');
-                if (dropdown) {
-                    dropdown.classList.toggle('active');
-                }
+    if (!navMenu) {
+        console.error('ERROR: Nav menu not found!');
+        return;
+    }
+
+    console.log('Adding click listener to hamburger');
+
+    const mobileContact = document.querySelector('.mobile-menu-contact');
+
+    hamburger.addEventListener('click', function() {
+        console.log('HAMBURGER CLICKED!');
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+
+        if (mobileContact) {
+            mobileContact.classList.toggle('active');
+        }
+
+        document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+        console.log('Menu active:', navMenu.classList.contains('active'));
+    });
+
+    // Close menu when clicking a link (but not dropdown toggle)
+    const navLinks = navMenu.querySelectorAll('a:not(.dropdown-toggle)');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+            if (mobileContact) {
+                mobileContact.classList.remove('active');
             }
+            document.body.style.overflow = '';
         });
     });
 
-    // Close menu when clicking on a link
-    const navLinks = document.querySelectorAll('.nav-menu a:not(.dropdown-toggle)');
-    navLinks.forEach(function(link) {
-        link.addEventListener('click', function() {
+    // Handle dropdown toggle on mobile
+    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+    dropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', function(e) {
             if (window.innerWidth <= 1024) {
-                navMenu.classList.remove('active');
-                body.style.overflow = '';
+                e.preventDefault();
+                const dropdown = this.closest('.dropdown');
+                dropdown.classList.toggle('active');
             }
         });
     });
@@ -326,8 +333,8 @@ caseItems.forEach(item => {
 });
 
 // Add lightbox styles dynamically
-const style = document.createElement('style');
-style.textContent = `
+const lightboxStyle = document.createElement('style');
+lightboxStyle.textContent = `
     .lightbox {
         position: fixed;
         top: 0;
@@ -397,4 +404,4 @@ style.textContent = `
         }
     }
 `;
-document.head.appendChild(style);
+document.head.appendChild(lightboxStyle);

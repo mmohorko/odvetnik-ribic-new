@@ -41,9 +41,33 @@
                         </li>
                         <li><a href="kontakt.html">KONTAKT</a></li>
                     </ul>
-                    <button class="btn-gold" onclick="location.href='index.html#contact'">BREZPLAČEN POSVET</button>
-                    <button class="mobile-menu-toggle">
-                        <i class="fas fa-bars"></i>
+                    <div class="mobile-menu-contact">
+                        <a href="tel:+38631633663" class="mobile-contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <div class="contact-label">Telefon</div>
+                                <div class="contact-value">+386 31 633 663</div>
+                            </div>
+                        </a>
+                        <a href="mailto:info@ribiclaw.com" class="mobile-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value">info@ribiclaw.com</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="header-actions">
+                        <a href="tel:+38631633663" class="header-phone">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+386 31 633 663</span>
+                        </a>
+                        <button class="btn-gold" onclick="location.href='index.html#contact'">BREZPLAČEN POSVET</button>
+                    </div>
+                    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
                     </button>
                 </div>
             </div>
@@ -58,7 +82,7 @@
                 <a href="index.html">Domov</a> / <a href="index.html#practice">Storitve</a> / <span>Gospodarsko Pravo</span>
             </div>
             <h1 class="service-hero-title">Gospodarsko Pravo</h1>
-            <p class="service-hero-subtitle">Pravno svetovanje za podjetja in M&A transakcije</p>
+            <p class="service-hero-subtitle">Celovite pravne storitve za podjetja, M&A in korporativno svetovanje</p>
         </div>
     </section>
 
@@ -69,18 +93,19 @@
                 <div class="service-main">
                     <div class="service-intro">
                         <p class="lead-text">
-                            Gospodarsko pravo obsega široko paleto pravnih vprašanj, ki ureja razmerja med delodajalci in delavci. Z izkušnjami
-                            na področju gospodarskega prava vam zagotavljam strokovno pomoč in svetovanje pri vseh vprašanjih,
-                            povezanih s poslovanjem podjetij.
+                            Gospodarsko pravo obsega široko paleto pravnih vprašanj, ki so ključnega pomena za uspešno poslovanje podjetij.
+                            Od ustanovitve družbe, korporativnega upravljanja, sklepanja poslovnih pogodb do kompleksnih M&A transakcij -
+                            zagotavljam celovito pravno podporo za podjetja vseh velikosti.
                         </p>
                     </div>
 
                     <div class="service-section">
-                        <h2>Kaj zajema delovno pravo?</h2>
+                        <h2>Kaj zajema gospodarsko pravo?</h2>
                         <p>
-                            Delovno pravo ureja vse vidike delovnih razmerij - od sklenitve pogodbe o zaposlitvi do prenehanja
-                            delovnega razmerja. Področje je zelo široko in zahteva poznavanje različnih zakonov, podzakonskih
-                            aktov in sodne prakse.
+                            Gospodarsko pravo ureja vse vidike poslovanja podjetij - od ustanovitve, skozi vsakodnevno poslovanje,
+                            do reorganizacij in prevzemov. Področje zahteva poznavanje ZGD-1, Obligacijskega zakonika, davčne zakonodaje
+                            ter širokega spektra sektorskih predpisov. Nudim strokovno svetovanje, ki podjetjem omogoča varno in učinkovito
+                            poslovanje v skladu s pravnimi predpisi.
                         </p>
                     </div>
 
@@ -88,70 +113,71 @@
                         <h2>Storitve na področju gospodarskega prava</h2>
                         <div class="service-features">
                             <div class="feature-item">
-                                <i class="fas fa-file-contract"></i>
-                                <h3>Pogodbe o zaposlitvi</h3>
-                                <p>Priprava, pregled in svetovanje pri pogodbah o zaposlitvi ter avtorskih pogodbah. Zagotovimo, da so vaše pravice ustrezno zavarovane.</p>
+                                <i class="fas fa-building"></i>
+                                <h3>Ustanovitev družb</h3>
+                                <p>Celovita pomoč pri ustanovitvi d.o.o., d.d., s.p. in drugih pravnih oblik. Priprava ustanovitvenih aktov, vpis v sodno register in svetovanje pri izbiri optimalne organizacijske oblike.</p>
                             </div>
                             <div class="feature-item">
-                                <i class="fas fa-handshake-slash"></i>
-                                <h3>Odpovedi pogodb</h3>
-                                <p>Svetovanje in zastopanje pri rednih in izrednih odpovedih pogodb o zaposlitvi. Priprava odpovednih pisem in zastopanje pred sodišči.</p>
+                                <i class="fas fa-handshake"></i>
+                                <h3>M&A in prevzemi</h3>
+                                <p>Pravno svetovanje pri združitvah in prevzemih podjetij (M&A), due diligence pregledi, strukturiranje transakcij in pogajanja. Zastopanje pri kompleksnih korporativnih transakcijah.</p>
                             </div>
                             <div class="feature-item">
-                                <i class="fas fa-money-bill-wave"></i>
-                                <h3>Odpravnine in regres</h3>
-                                <p>Svetovanje pri izračunu in uveljavljanju odpravnin, regresa, jubilejnih nagrad in drugih prejemkov iz delovnega razmerja.</p>
+                                <i class="fas fa-file-signature"></i>
+                                <h3>Poslovne pogodbe</h3>
+                                <p>Priprava in pregled poslovnih pogodb - prodajne, najemne, distribucijske, franšizne, sodelovalnih pogodb in drugih komercialnih sporazumov. Zaščita vaših poslovnih interesov.</p>
                             </div>
                             <div class="feature-item">
-                                <i class="fas fa-balance-scale-right"></i>
-                                <h3>Pravice in obveznosti</h3>
-                                <p>Svetovanje o pravicah in obveznostih delavcev in delodajalcev, delovnem času, dopustih, bolniški odsotnosti in drugih vidikih delovnega razmerja.</p>
+                                <i class="fas fa-users-cog"></i>
+                                <h3>Korporativno upravljanje</h3>
+                                <p>Svetovanje pri korporativnem upravljanju, pravicah in obveznostih družbenikov/delničarjev, sklicu skupščin, povečanju/zmanjšanju kapitala in reorganizacijah družb.</p>
                             </div>
                             <div class="feature-item">
-                                <i class="fas fa-gavel"></i>
-                                <h3>Delovni spori</h3>
-                                <p>Zastopanje v delovnih sporih pred delovno-socialnimi sodišči. Mediacija in reševanje sporov pred eskalacijo.</p>
+                                <i class="fas fa-shield-alt"></i>
+                                <h3>Konkurenčno pravo</h3>
+                                <p>Svetovanje pri vprašanjih konkurenčnega prava, preprečevanja nelojalne konkurence, varstva poslovne skrivnosti in zaščite tržnega položaja podjetja.</p>
                             </div>
                             <div class="feature-item">
-                                <i class="fas fa-globe"></i>
-                                <h3>Pravo tujcev</h3>
-                                <p>Svetovanje pri zaposlovanju tujih delavcev, dovoljenja za delo, napotitev delavcev v tujino in druga vprašanja mednarodnega delovnega prava.</p>
+                                <i class="fas fa-chart-line"></i>
+                                <h3>Restrukturiranje</h3>
+                                <p>Pravna pomoč pri prestrukturiranju podjetij, statusnih spremembah, izčlenitvah, spojitvah, deltvah in drugih korporativnih reorganizacijah.</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="service-section highlight-box">
-                        <h2>Za delodajalce</h2>
+                        <h2>Za podjetja</h2>
                         <ul class="check-list">
-                            <li><i class="fas fa-check"></i> Priprava internih aktov podjetja (pravilniki, sistematizacija)</li>
-                            <li><i class="fas fa-check"></i> Svetovanje pri zaposlovanju in prenehanju delovnih razmerij</li>
-                            <li><i class="fas fa-check"></i> Zastopanje v inšpekcijskih postopkih</li>
-                            <li><i class="fas fa-check"></i> Svetovanje pri kolektivnih pogodbah</li>
-                            <li><i class="fas fa-check"></i> Prestrukturiranje kadrov in odpuščanje</li>
+                            <li><i class="fas fa-check"></i> Ustanovitev in registracija novih družb (d.o.o., d.d., s.p.)</li>
+                            <li><i class="fas fa-check"></i> Priprava poslovnih pogodb in splošnih pogojev poslovanja</li>
+                            <li><i class="fas fa-check"></i> Korporativno upravljanje in svetovanje organom družb</li>
+                            <li><i class="fas fa-check"></i> Spremljanje sprememb zakonodaje in compliance</li>
+                            <li><i class="fas fa-check"></i> Reševanje gospodarskih sporov in zastopanje pred sodišči</li>
                         </ul>
                     </div>
 
                     <div class="service-section highlight-box">
-                        <h2>Za delavce</h2>
+                        <h2>M&A transakcije</h2>
                         <ul class="check-list">
-                            <li><i class="fas fa-check"></i> Pregled in svetovanje pri pogodbah o zaposlitvi</li>
-                            <li><i class="fas fa-check"></i> Uveljavljanje plač in drugih prejemkov</li>
-                            <li><i class="fas fa-check"></i> Izpodbijanje nezakonitih odpovedi</li>
-                            <li><i class="fas fa-check"></i> Uveljavljanje odškodnin zaradi nezakonitega ravnanja delodajalca</li>
-                            <li><i class="fas fa-check"></i> Zastopanje v sporih pred delovnimi sodišči</li>
+                            <li><i class="fas fa-check"></i> Due diligence pravni pregledi podjetij</li>
+                            <li><i class="fas fa-check"></i> Strukturiranje transakcij in pogajanja</li>
+                            <li><i class="fas fa-check"></i> Priprava prodajnih pogodb (SPA, APA)</li>
+                            <li><i class="fas fa-check"></i> Svetovanje pri prevzemih in združitvah</li>
+                            <li><i class="fas fa-check"></i> Post-merger integration in pravna podpora</li>
                         </ul>
                     </div>
 
                     <div class="service-section">
-                        <h2>Zakaj izbrati Leon Ribič za delovno pravo?</h2>
+                        <h2>Zakaj izbrati odvetniško pisarno Leon Ribič za gospodarsko pravo?</h2>
                         <p>
-                            Z izkušnjami na področju gospodarskega prava zagotavljam hiter odziv in učinkovito rešitev vaših pravnih
-                            vprašanj. Razumem, da so delovna razmerja pogosto občutljiva tema in zahtevajo diskretno ter
-                            strokovno obravnavo.
+                            Z izkušnjami na področju gospodarskega prava zagotavljam podjetjem celovito pravno podporo - od vsakodnevnega
+                            svetovanja do kompleksnih korporativnih transakcij. Razumem poslovne izzive, s katerimi se podjetja soočajo,
+                            in nudim praktične pravne rešitve, ki podpirajo vaše poslovne cilje.
                         </p>
                         <p>
-                            Vsak primer obravnavam individualno in si prizadevam za najboljše možne rezultate, bodisi gre za
-                            preventivno svetovanje bodisi za zastopanje v sodnih postopkih.
+                            Vsak projekt obravnavam s polno pozornostjo in strokovno skrbnostjo. Ponosem se z osebnim pristopom,
+                            hitrim odzivom in sposobnostjo razumevanja poslovnih potreb naših klientov. Cilj je zagotoviti
+                            pravno varnost in omogočiti podjetjem nemoteno rast in razvoj.
                         </p>
                     </div>
                 </div>
@@ -160,8 +186,8 @@
                     <div class="sidebar-widget">
                         <h3>Druge storitve</h3>
                         <ul class="service-menu">
-                            <li class="active"><a href="delovno-pravo.html"><i class="fas fa-briefcase"></i> Delovno pravo</a></li>
-                            <li><a href="gospodarsko-pravo.html"><i class="fas fa-building"></i> Gospodarsko pravo</a></li>
+                            <li><a href="delovno-pravo.html"><i class="fas fa-briefcase"></i> Delovno pravo</a></li>
+                            <li class="active"><a href="gospodarsko-pravo.html"><i class="fas fa-building"></i> Gospodarsko pravo</a></li>
                             <li><a href="pogodbe.html"><i class="fas fa-file-contract"></i> Pogodbe</a></li>
                             <li><a href="izvrsba-insolventnost.html"><i class="fas fa-gavel"></i> Izvršba in insolventnost</a></li>
                             <li><a href="bancnistvo-finance.html"><i class="fas fa-university"></i> Bančništvo in finance</a></li>
@@ -199,8 +225,8 @@
     <section class="cta-banner">
         <div class="container">
             <div class="cta-content">
-                <h2>POTREBUJETE POMOČ PRI DELOVNEM PRAVU?</h2>
-                <p>Kontaktirajte me za brezplačen posvet in strokovno svetovanje</p>
+                <h2>POTREBUJETE POMOČ PRI GOSPODARSKEM PRAVU?</h2>
+                <p>Kontaktirajte me za brezplačen posvet pri vzpostavitvi podjetja, pogodbah ali M&A transakcijah</p>
             </div>
             <div class="cta-phone">
                 <i class="fas fa-phone-alt"></i>
@@ -225,7 +251,7 @@
                     <div class="social-links">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="mailto:info@ribic-arh.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="mailto:info@ribiclaw.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
                 <div class="footer-column">
@@ -246,17 +272,14 @@
                         <li><a href="index.html#about">O meni</a></li>
                         <li><a href="index.html#practice">Storitve</a></li>
                         <li><a href="index.html#contact">Kontakt</a></li>
-                        <li><a href="https://ribiclaw.com" target="_blank">Spletna stran</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>KONTAKT</h3>
                     <ul class="contact-info">
-                        <li><i class="fas fa-map-marker-alt"></i> Tomšičeva ulica 1<br>1000 Ljubljana, Slovenija</li>
-                        <li><i class="fas fa-phone"></i> +386 31 633 663</li>
-                        <li><i class="fas fa-envelope"></i> info@ribic-arh.com</li>
-                        <li><i class="fas fa-envelope"></i> odvetnik.leon.ribic@gmail.com</li>
-                        <li><i class="fas fa-clock"></i> Pon - Pet: 9:00 - 17:00</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Odvetnik Leon Ribič<br>Tomšičeva ulica 1<br>1000 Ljubljana</li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info.com">info.com</a></li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+38631633663">+386 31 633 663</a></li>
                     </ul>
                 </div>
             </div>
@@ -264,6 +287,9 @@
                 <p>&copy; 2024 Odvetniška pisarna Leon Ribič. Vse pravice pridržane. | Vpisan v imenik Odvetniške zbornice Slovenije</p>
             </div>
         </div>
+
+        <!-- AI Agent Chat Widget -->
+        <script src="https://sogymswkppapgobreycf.supabase.co/functions/v1/widget/dbb506b1-d793-49d2-90c4-8c8664b25384/widget.js?v=1764936603125" async></script>
     </footer>
 
     <script src="script.js"></script>

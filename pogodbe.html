@@ -41,9 +41,33 @@
                         </li>
                         <li><a href="kontakt.html">KONTAKT</a></li>
                     </ul>
-                    <button class="btn-gold" onclick="location.href='index.html#contact'">BREZPLAČEN POSVET</button>
-                    <button class="mobile-menu-toggle">
-                        <i class="fas fa-bars"></i>
+                    <div class="mobile-menu-contact">
+                        <a href="tel:+38631633663" class="mobile-contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <div class="contact-label">Telefon</div>
+                                <div class="contact-value">+386 31 633 663</div>
+                            </div>
+                        </a>
+                        <a href="mailto:info@ribiclaw.com" class="mobile-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value">info@ribiclaw.com</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="header-actions">
+                        <a href="tel:+38631633663" class="header-phone">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+386 31 633 663</span>
+                        </a>
+                        <button class="btn-gold" onclick="location.href='index.html#contact'">BREZPLAČEN POSVET</button>
+                    </div>
+                    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
                     </button>
                 </div>
             </div>
@@ -58,7 +82,7 @@
                 <a href="index.html">Domov</a> / <a href="index.html#practice">Storitve</a> / <span>Pogodbe</span>
             </div>
             <h1 class="service-hero-title">Pogodbe</h1>
-            <p class="service-hero-subtitle">Sestava in pregled pogodb</p>
+            <p class="service-hero-subtitle">Strokovna priprava, pregled in svetovanje pri poslovnih in civilnih pogodbah</p>
         </div>
     </section>
 
@@ -69,89 +93,91 @@
                 <div class="service-main">
                     <div class="service-intro">
                         <p class="lead-text">
-                            Delovno pravo je kompleksno področje, ki ureja razmerja med delodajalci in delavci. Z izkušnjami
-                            na področju delovnega prava vam zagotavljam strokovno pomoč in svetovanje pri vseh vprašanjih,
-                            povezanih z delovnimi razmerji.
+                            Pogodbe so temelj vsakega poslovnega in zasebnega pravnega razmerja. Dobro pripravljena pogodba
+                            ščiti vaše interese, preprečuje spore in zagotavlja pravno varnost. Nudim celovite storitve na področju
+                            priprave, pregleda in svetovanja pri vseh vrstah pogodb - od poslovnih do civilnih.
                         </p>
                     </div>
 
                     <div class="service-section">
-                        <h2>Kaj zajema delovno pravo?</h2>
+                        <h2>Zakaj je pomembna kakovostno pripravljena pogodba?</h2>
                         <p>
-                            Delovno pravo ureja vse vidike delovnih razmerij - od sklenitve pogodbe o zaposlitvi do prenehanja
-                            delovnega razmerja. Področje je zelo široko in zahteva poznavanje različnih zakonov, podzakonskih
-                            aktov in sodne prakse.
+                            Pogodba je pravni dokument, ki opredeljuje pravice in obveznosti strank. Slabo pripravljena ali nejasna pogodba
+                            lahko vodi v dolgotrajne in drage spore. Pravilna pogodba vsebuje jasne določbe o predmetu, ceni, rokih, odgovornosti
+                            in načinih reševanja sporov. Pri pripravi pogodbe upoštevam vaše specifične potrebe in zagotavljam
+                            skladnost z veljavno zakonodajo ter sodno prakso.
                         </p>
                     </div>
 
                     <div class="service-section">
-                        <h2>Storitve na področju delovnega prava</h2>
+                        <h2>Storitve na področju pogodb</h2>
                         <div class="service-features">
                             <div class="feature-item">
-                                <i class="fas fa-file-contract"></i>
+                                <i class="fas fa-file-signature"></i>
+                                <h3>Poslovne pogodbe</h3>
+                                <p>Priprava in pregled pogodb o prodaji, dobavi, izvedbi del, franšizingu, distribuciji in drugih poslovnih pogodb. Zagotovim, da pogodba ustreza vašim poslovnim ciljem in pravnim standardom.</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-handshake"></i>
+                                <h3>B2B pogodbe</h3>
+                                <p>Pogodbe med podjetji (B2B) - dobavne pogodbe, pogodbe o sodelovanju, skupnih vložkih (joint venture), pogodbe o zastopanju, posredovanju in distribuciji.</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-home"></i>
+                                <h3>Nepremičninske pogodbe</h3>
+                                <p>Pogodbe o prodaji, najemu, zakupu nepremičnin, predkupne pogodbe, pogodbe o dosmrtnem preživljanju, služnostne pogodbe in druge nepremičninske transakcije.</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-user-tie"></i>
                                 <h3>Pogodbe o zaposlitvi</h3>
-                                <p>Priprava, pregled in svetovanje pri pogodbah o zaposlitvi ter avtorskih pogodbah. Zagotovimo, da so vaše pravice ustrezno zavarovane.</p>
+                                <p>Priprava pogodb o zaposlitvi, pogodb o delu, avtorskih pogodb, pogodb o poslovodni funkciji ter pogodb o konkurenčni klavzuli in varovanju poslovnih skrivnosti.</p>
                             </div>
                             <div class="feature-item">
-                                <i class="fas fa-handshake-slash"></i>
-                                <h3>Odpovedi pogodb</h3>
-                                <p>Svetovanje in zastopanje pri rednih in izrednih odpovedih pogodb o zaposlitvi. Priprava odpovednih pisem in zastopanje pred sodišči.</p>
+                                <i class="fas fa-search"></i>
+                                <h3>Pregled pogodb</h3>
+                                <p>Pravni pregled in analiza obstoječih pogodb, identifikacija rizičnih klavzul, svetovanje glede pogodbenih pravic in obveznosti ter predlogi za izboljšave.</p>
                             </div>
                             <div class="feature-item">
-                                <i class="fas fa-money-bill-wave"></i>
-                                <h3>Odpravnine in regres</h3>
-                                <p>Svetovanje pri izračunu in uveljavljanju odpravnin, regresa, jubilejnih nagrad in drugih prejemkov iz delovnega razmerja.</p>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-balance-scale-right"></i>
-                                <h3>Pravice in obveznosti</h3>
-                                <p>Svetovanje o pravicah in obveznostih delavcev in delodajalcev, delovnem času, dopustih, bolniški odsotnosti in drugih vidikih delovnega razmerja.</p>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-gavel"></i>
-                                <h3>Delovni spori</h3>
-                                <p>Zastopanje v delovnih sporih pred delovno-socialnimi sodišči. Mediacija in reševanje sporov pred eskalacijo.</p>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-globe"></i>
-                                <h3>Pravo tujcev</h3>
-                                <p>Svetovanje pri zaposlovanju tujih delavcev, dovoljenja za delo, napotitev delavcev v tujino in druga vprašanja mednarodnega delovnega prava.</p>
+                                <i class="fas fa-file-alt"></i>
+                                <h3>Splošni pogoji poslovanja</h3>
+                                <p>Priprava splošnih pogojev poslovanja (SPP), pravil o varstvu osebnih podatkov, pravil spletne trgovine in drugih standardiziranih pogodbenih dokumentov.</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="service-section highlight-box">
-                        <h2>Za delodajalce</h2>
+                        <h2>Za podjetja</h2>
                         <ul class="check-list">
-                            <li><i class="fas fa-check"></i> Priprava internih aktov podjetja (pravilniki, sistematizacija)</li>
-                            <li><i class="fas fa-check"></i> Svetovanje pri zaposlovanju in prenehanju delovnih razmerij</li>
-                            <li><i class="fas fa-check"></i> Zastopanje v inšpekcijskih postopkih</li>
-                            <li><i class="fas fa-check"></i> Svetovanje pri kolektivnih pogodbah</li>
-                            <li><i class="fas fa-check"></i> Prestrukturiranje kadrov in odpuščanje</li>
+                            <li><i class="fas fa-check"></i> Priprava in pregled dobavnih pogodb ter pogodb z dobavitelji</li>
+                            <li><i class="fas fa-check"></i> Splošni pogoji poslovanja (SPP) prilagojeni vaši dejavnosti</li>
+                            <li><i class="fas fa-check"></i> Pogodbe o distribuciji, franšizingu in licencah</li>
+                            <li><i class="fas fa-check"></i> Pogodbe o zaposlitvi in poslovodstvu</li>
+                            <li><i class="fas fa-check"></i> Pogodbe o varstvu poslovnih skrivnosti in NDA</li>
                         </ul>
                     </div>
 
                     <div class="service-section highlight-box">
-                        <h2>Za delavce</h2>
+                        <h2>Za fizične osebe</h2>
                         <ul class="check-list">
-                            <li><i class="fas fa-check"></i> Pregled in svetovanje pri pogodbah o zaposlitvi</li>
-                            <li><i class="fas fa-check"></i> Uveljavljanje plač in drugih prejemkov</li>
-                            <li><i class="fas fa-check"></i> Izpodbijanje nezakonitih odpovedi</li>
-                            <li><i class="fas fa-check"></i> Uveljavljanje odškodnin zaradi nezakonitega ravnanja delodajalca</li>
-                            <li><i class="fas fa-check"></i> Zastopanje v sporih pred delovnimi sodišči</li>
+                            <li><i class="fas fa-check"></i> Pogodbe o prodaji in nakupu nepremičnin</li>
+                            <li><i class="fas fa-check"></i> Najemne in zakupne pogodbe</li>
+                            <li><i class="fas fa-check"></i> Pogodbe o dosmrtnem preživljanju</li>
+                            <li><i class="fas fa-check"></i> Pregled pogodb pred podpisom (nakup stanovanja, hiše, vozila)</li>
+                            <li><i class="fas fa-check"></i> Pogodbe o posojilu in poroštvu</li>
                         </ul>
                     </div>
 
                     <div class="service-section">
-                        <h2>Zakaj izbrati Leon Ribič za delovno pravo?</h2>
+                        <h2>Zakaj izbrati odvetniško pisarno Leon Ribič za pogodbe?</h2>
                         <p>
-                            Z izkušnjami na področju delovnega prava zagotavljam hiter odziv in učinkovito rešitev vaših pravnih
-                            vprašanj. Razumem, da so delovna razmerja pogosto občutljiva tema in zahtevajo diskretno ter
-                            strokovno obravnavo.
+                            Pri pripravi pogodb je ključnega pomena ne le poznavanje zakonodaje, temveč tudi razumevanje vaših
+                            poslovnih ciljev in potencialnih tveganj. Vsaka pogodba je prilagojena vašim specifičnim potrebam in
+                            zagotavlja optimalno pravno zaščito.
                         </p>
                         <p>
-                            Vsak primer obravnavam individualno in si prizadevam za najboljše možne rezultate, bodisi gre za
-                            preventivno svetovanje bodisi za zastopanje v sodnih postopkih.
+                            Ne glede na to, ali potrebujete preprosto pogodbo o najemu ali kompleksno mednarodno B2B pogodbo,
+                            vam zagotavljam jasno, razumljivo in pravno učinkovito dokumentacijo. Pogodbe pripravljam hitro in
+                            učinkovito, pri tem pa ne pozabim na podrobnosti, ki so ključne za vašo pravno varnost.
                         </p>
                     </div>
                 </div>
@@ -160,12 +186,12 @@
                     <div class="sidebar-widget">
                         <h3>Druge storitve</h3>
                         <ul class="service-menu">
-                            <li class="active"><a href="delovno-pravo.html"><i class="fas fa-briefcase"></i> Delovno pravo</a></li>
+                            <li><a href="delovno-pravo.html"><i class="fas fa-briefcase"></i> Delovno pravo</a></li>
                             <li><a href="gospodarsko-pravo.html"><i class="fas fa-building"></i> Gospodarsko pravo</a></li>
-                            <li><a href="pogodbe.html"><i class="fas fa-file-contract"></i> Pogodbe</a></li>
+                            <li class="active"><a href="pogodbe.html"><i class="fas fa-file-contract"></i> Pogodbe</a></li>
                             <li><a href="izvrsba-insolventnost.html"><i class="fas fa-gavel"></i> Izvršba in insolventnost</a></li>
                             <li><a href="bancnistvo-finance.html"><i class="fas fa-university"></i> Bančništvo in finance</a></li>
-                            <li><a href="civilno-pravo.html"><img src="https://ribiclaw.com/wp-content/uploads/2024/10/Leon_logo_white_outline-300x116.png" alt="Leon Ribič Logo" class="logo-image"> Civilno pravo</a></li>
+                            <li><a href="civilno-pravo.html"><i class="fas fa-balance-scale"></i> Civilno pravo</a></li>
                             <li><a href="it-pravo.html"><i class="fas fa-laptop-code"></i> IT pravo</a></li>
                             <li><a href="druga-podrocja.html"><i class="fas fa-ellipsis-h"></i> Druga področja</a></li>
                         </ul>
@@ -199,8 +225,8 @@
     <section class="cta-banner">
         <div class="container">
             <div class="cta-content">
-                <h2>POTREBUJETE POMOČ PRI DELOVNEM PRAVU?</h2>
-                <p>Kontaktirajte me za brezplačen posvet in strokovno svetovanje</p>
+                <h2>POTREBUJETE POMOČ PRI PRIPRAVI POGODB?</h2>
+                <p>Kontaktirajte me za brezplačen posvet pri pripravi in pregledu pogodb</p>
             </div>
             <div class="cta-phone">
                 <i class="fas fa-phone-alt"></i>
@@ -225,7 +251,7 @@
                     <div class="social-links">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="mailto:info@ribic-arh.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="mailto:info@ribiclaw.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
                 <div class="footer-column">
@@ -246,17 +272,14 @@
                         <li><a href="index.html#about">O meni</a></li>
                         <li><a href="index.html#practice">Storitve</a></li>
                         <li><a href="index.html#contact">Kontakt</a></li>
-                        <li><a href="https://ribiclaw.com" target="_blank">Spletna stran</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>KONTAKT</h3>
                     <ul class="contact-info">
-                        <li><i class="fas fa-map-marker-alt"></i> Tomšičeva ulica 1<br>1000 Ljubljana, Slovenija</li>
-                        <li><i class="fas fa-phone"></i> +386 31 633 663</li>
-                        <li><i class="fas fa-envelope"></i> info@ribic-arh.com</li>
-                        <li><i class="fas fa-envelope"></i> odvetnik.leon.ribic@gmail.com</li>
-                        <li><i class="fas fa-clock"></i> Pon - Pet: 9:00 - 17:00</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Odvetnik Leon Ribič<br>Tomšičeva ulica 1<br>1000 Ljubljana</li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info.com">info.com</a></li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+38631633663">+386 31 633 663</a></li>
                     </ul>
                 </div>
             </div>
@@ -264,6 +287,9 @@
                 <p>&copy; 2024 Odvetniška pisarna Leon Ribič. Vse pravice pridržane. | Vpisan v imenik Odvetniške zbornice Slovenije</p>
             </div>
         </div>
+
+        <!-- AI Agent Chat Widget -->
+        <script src="https://sogymswkppapgobreycf.supabase.co/functions/v1/widget/dbb506b1-d793-49d2-90c4-8c8664b25384/widget.js?v=1764936603125" async></script>
     </footer>
 
     <script src="script.js"></script>

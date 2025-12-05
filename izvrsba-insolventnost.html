@@ -41,9 +41,33 @@
                         </li>
                         <li><a href="kontakt.html">KONTAKT</a></li>
                     </ul>
-                    <button class="btn-gold" onclick="location.href='index.html#contact'">BREZPLAČEN POSVET</button>
-                    <button class="mobile-menu-toggle">
-                        <i class="fas fa-bars"></i>
+                    <div class="mobile-menu-contact">
+                        <a href="tel:+38631633663" class="mobile-contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <div class="contact-label">Telefon</div>
+                                <div class="contact-value">+386 31 633 663</div>
+                            </div>
+                        </a>
+                        <a href="mailto:info@ribiclaw.com" class="mobile-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value">info@ribiclaw.com</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="header-actions">
+                        <a href="tel:+38631633663" class="header-phone">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+386 31 633 663</span>
+                        </a>
+                        <button class="btn-gold" onclick="location.href='index.html#contact'">BREZPLAČEN POSVET</button>
+                    </div>
+                    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
                     </button>
                 </div>
             </div>
@@ -58,7 +82,7 @@
                 <a href="index.html">Domov</a> / <a href="index.html#practice">Storitve</a> / <span>Izvršba in Insolventnost</span>
             </div>
             <h1 class="service-hero-title">Izvršba in Insolventnost</h1>
-            <p class="service-hero-subtitle">Svetovanje upnikom in dolžnikom</p>
+            <p class="service-hero-subtitle">Pravno svetovanje in zastopanje v izvršilnih in insolvenčnih postopkih</p>
         </div>
     </section>
 
@@ -69,89 +93,91 @@
                 <div class="service-main">
                     <div class="service-intro">
                         <p class="lead-text">
-                            Delovno pravo je kompleksno področje, ki ureja razmerja med delodajalci in delavci. Z izkušnjami
-                            na področju delovnega prava vam zagotavljam strokovno pomoč in svetovanje pri vseh vprašanjih,
-                            povezanih z delovnimi razmerji.
+                            Izvršba in insolventnost sta področji, ki zahtevata hitro in učinkovito pravno ukrepanje. Nudim celovito
+                            pravno pomoč upnikom pri izterjavi terjatev in dolžnikom pri reševanju finančnih težav. Svetujem in
+                            zastopam stranke v vseh vrstah izvršilnih in insolvenčnih postopkov.
                         </p>
                     </div>
 
                     <div class="service-section">
-                        <h2>Kaj zajema delovno pravo?</h2>
+                        <h2>Kaj sta izvršba in insolventnost?</h2>
                         <p>
-                            Delovno pravo ureja vse vidike delovnih razmerij - od sklenitve pogodbe o zaposlitvi do prenehanja
-                            delovnega razmerja. Področje je zelo široko in zahteva poznavanje različnih zakonov, podzakonskih
-                            aktov in sodne prakse.
+                            Izvršba je sodni postopek, s katerim upnik prisilno uveljavlja svojo terjatev proti dolžniku. Insolventnost
+                            pa je stanje trajne nezmožnosti plačila dolgov, ki se rešuje z insolvenčnimi postopki (stečaj, prisilna
+                            poravnava, osebni stečaj). Obe področji ureja Zakon o izvršbi in zavarovanju (ZIZ) ter Zakon o finančnem
+                            poslovanju, postopkih zaradi insolventnosti in prisilnem prenehanju (ZFPPIPP).
                         </p>
                     </div>
 
                     <div class="service-section">
-                        <h2>Storitve na področju delovnega prava</h2>
+                        <h2>Storitve na področju izvršbe in insolventnosti</h2>
                         <div class="service-features">
                             <div class="feature-item">
-                                <i class="fas fa-file-contract"></i>
-                                <h3>Pogodbe o zaposlitvi</h3>
-                                <p>Priprava, pregled in svetovanje pri pogodbah o zaposlitvi ter avtorskih pogodbah. Zagotovimo, da so vaše pravice ustrezno zavarovane.</p>
+                                <i class="fas fa-file-invoice-dollar"></i>
+                                <h3>Izvršilni postopki</h3>
+                                <p>Vložitev izvršilnih predlogov, zastopanje upnikov v izvršilnih postopkih, izvršba na denarno terjatev, izvršba na premičnine in nepremičnine, izvršba na plačo ter izvršba na denarna sredstva na računu.</p>
                             </div>
                             <div class="feature-item">
-                                <i class="fas fa-handshake-slash"></i>
-                                <h3>Odpovedi pogodb</h3>
-                                <p>Svetovanje in zastopanje pri rednih in izrednih odpovedih pogodb o zaposlitvi. Priprava odpovednih pisem in zastopanje pred sodišči.</p>
+                                <i class="fas fa-shield-alt"></i>
+                                <h3>Ugovori zoper izvršbo</h3>
+                                <p>Zastopanje dolžnikov pri vlaganju ugovorov zoper izvršbo, predlogov za zaustavljanje izvršbe, predlogov za odlog izvršbe in pravnih sredstev zoper odločbe izvršilnega sodišča.</p>
                             </div>
                             <div class="feature-item">
-                                <i class="fas fa-money-bill-wave"></i>
-                                <h3>Odpravnine in regres</h3>
-                                <p>Svetovanje pri izračunu in uveljavljanju odpravnin, regresa, jubilejnih nagrad in drugih prejemkov iz delovnega razmerja.</p>
+                                <i class="fas fa-building"></i>
+                                <h3>Stečajni postopki</h3>
+                                <p>Svetovanje in zastopanje pri vložitvi predlogov za stečaj nad pravnimi osebami, prijava terjatev v stečajne postopke, sodelovanje z upravitelji in zastopanje v insolvenčni masi.</p>
                             </div>
                             <div class="feature-item">
-                                <i class="fas fa-balance-scale-right"></i>
-                                <h3>Pravice in obveznosti</h3>
-                                <p>Svetovanje o pravicah in obveznostih delavcev in delodajalcev, delovnem času, dopustih, bolniški odsotnosti in drugih vidikih delovnega razmerja.</p>
+                                <i class="fas fa-handshake"></i>
+                                <h3>Prisilna poravnava</h3>
+                                <p>Priprava in vložitev predlogov za prisilno poravnavo, pogajanja z upniki, izdelava načrta finančne reorganizacije in zastopanje v postopkih prisilne poravnave.</p>
                             </div>
                             <div class="feature-item">
-                                <i class="fas fa-gavel"></i>
-                                <h3>Delovni spori</h3>
-                                <p>Zastopanje v delovnih sporih pred delovno-socialnimi sodišči. Mediacija in reševanje sporov pred eskalacijo.</p>
+                                <i class="fas fa-user"></i>
+                                <h3>Osebni stečaj</h3>
+                                <p>Svetovanje in zastopanje fizičnih oseb pri postopkih osebnega stečaja, priprava predlogov, svetovanje o pogojih in posledicah osebnega stečaja ter zastopanje v postopkih odpusta dolgov.</p>
                             </div>
                             <div class="feature-item">
-                                <i class="fas fa-globe"></i>
-                                <h3>Pravo tujcev</h3>
-                                <p>Svetovanje pri zaposlovanju tujih delavcev, dovoljenja za delo, napotitev delavcev v tujino in druga vprašanja mednarodnega delovnega prava.</p>
+                                <i class="fas fa-search-dollar"></i>
+                                <h3>Izterjava terjatev</h3>
+                                <p>Predhodna opozorila dolžnikom, pridobitev izvršilnih naslovov, svetovanje pri najustreznejših načinih izterjave ter zastopanje v postopkih zavarovanj terjatev.</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="service-section highlight-box">
-                        <h2>Za delodajalce</h2>
+                        <h2>Za upnike</h2>
                         <ul class="check-list">
-                            <li><i class="fas fa-check"></i> Priprava internih aktov podjetja (pravilniki, sistematizacija)</li>
-                            <li><i class="fas fa-check"></i> Svetovanje pri zaposlovanju in prenehanju delovnih razmerij</li>
-                            <li><i class="fas fa-check"></i> Zastopanje v inšpekcijskih postopkih</li>
-                            <li><i class="fas fa-check"></i> Svetovanje pri kolektivnih pogodbah</li>
-                            <li><i class="fas fa-check"></i> Prestrukturiranje kadrov in odpuščanje</li>
+                            <li><i class="fas fa-check"></i> Priprava in vložitev izvršilnih predlogov</li>
+                            <li><i class="fas fa-check"></i> Izvršba na denarno terjatev, plačo, račun</li>
+                            <li><i class="fas fa-check"></i> Izvršba na premičnine in nepremičnine</li>
+                            <li><i class="fas fa-check"></i> Prijava terjatev v stečajne postopke</li>
+                            <li><i class="fas fa-check"></i> Zavarovanje terjatev pred izvršbo</li>
                         </ul>
                     </div>
 
                     <div class="service-section highlight-box">
-                        <h2>Za delavce</h2>
+                        <h2>Za dolžnike</h2>
                         <ul class="check-list">
-                            <li><i class="fas fa-check"></i> Pregled in svetovanje pri pogodbah o zaposlitvi</li>
-                            <li><i class="fas fa-check"></i> Uveljavljanje plač in drugih prejemkov</li>
-                            <li><i class="fas fa-check"></i> Izpodbijanje nezakonitih odpovedi</li>
-                            <li><i class="fas fa-check"></i> Uveljavljanje odškodnin zaradi nezakonitega ravnanja delodajalca</li>
-                            <li><i class="fas fa-check"></i> Zastopanje v sporih pred delovnimi sodišči</li>
+                            <li><i class="fas fa-check"></i> Vlaganje ugovorov zoper izvršbo</li>
+                            <li><i class="fas fa-check"></i> Predlogi za zaustavljanje ali odlog izvršbe</li>
+                            <li><i class="fas fa-check"></i> Osebni stečaj in odpust dolgov</li>
+                            <li><i class="fas fa-check"></i> Prisilna poravnava in finančna reorganizacija</li>
+                            <li><i class="fas fa-check"></i> Zaščita pred neupravičeno izvršbo</li>
                         </ul>
                     </div>
 
                     <div class="service-section">
-                        <h2>Zakaj izbrati Leon Ribič za delovno pravo?</h2>
+                        <h2>Zakaj izbrati odvetniško pisarno Leon Ribič za izvršbo in insolventnost?</h2>
                         <p>
-                            Z izkušnjami na področju delovnega prava zagotavljam hiter odziv in učinkovito rešitev vaših pravnih
-                            vprašanj. Razumem, da so delovna razmerja pogosto občutljiva tema in zahtevajo diskretno ter
-                            strokovno obravnavo.
+                            Izvršilni in insolvenčni postopki so časovno občutljivi in zahtevajo natančno poznavanje procesnih
+                            pravil ter strategije. Razumem finančne pritiske, s katerimi se soočate, ne glede na to, ali ste upnik,
+                            ki potrebuje hitro izterjavo, ali dolžnik, ki išče način za rešitev prezadolženosti.
                         </p>
                         <p>
-                            Vsak primer obravnavam individualno in si prizadevam za najboljše možne rezultate, bodisi gre za
-                            preventivno svetovanje bodisi za zastopanje v sodnih postopkih.
+                            Zagotavljam hiter odziv, jasno komunikacijo in realistične ocene možnosti za uspeh. Pri zastopanju
+                            upnikov učinkovito izkoristim vse zakonske možnosti za izterjavo, pri dolžnikih pa pomagam najti
+                            optimalne rešitve za finančno reorganizacijo ali odpust dolgov.
                         </p>
                     </div>
                 </div>
@@ -160,12 +186,12 @@
                     <div class="sidebar-widget">
                         <h3>Druge storitve</h3>
                         <ul class="service-menu">
-                            <li class="active"><a href="delovno-pravo.html"><i class="fas fa-briefcase"></i> Delovno pravo</a></li>
+                            <li><a href="delovno-pravo.html"><i class="fas fa-briefcase"></i> Delovno pravo</a></li>
                             <li><a href="gospodarsko-pravo.html"><i class="fas fa-building"></i> Gospodarsko pravo</a></li>
                             <li><a href="pogodbe.html"><i class="fas fa-file-contract"></i> Pogodbe</a></li>
-                            <li><a href="izvrsba-insolventnost.html"><i class="fas fa-gavel"></i> Izvršba in insolventnost</a></li>
+                            <li class="active"><a href="izvrsba-insolventnost.html"><i class="fas fa-gavel"></i> Izvršba in insolventnost</a></li>
                             <li><a href="bancnistvo-finance.html"><i class="fas fa-university"></i> Bančništvo in finance</a></li>
-                            <li><a href="civilno-pravo.html"><img src="https://ribiclaw.com/wp-content/uploads/2024/10/Leon_logo_white_outline-300x116.png" alt="Leon Ribič Logo" class="logo-image"> Civilno pravo</a></li>
+                            <li><a href="civilno-pravo.html"><i class="fas fa-balance-scale"></i> Civilno pravo</a></li>
                             <li><a href="it-pravo.html"><i class="fas fa-laptop-code"></i> IT pravo</a></li>
                             <li><a href="druga-podrocja.html"><i class="fas fa-ellipsis-h"></i> Druga področja</a></li>
                         </ul>
@@ -199,8 +225,8 @@
     <section class="cta-banner">
         <div class="container">
             <div class="cta-content">
-                <h2>POTREBUJETE POMOČ PRI DELOVNEM PRAVU?</h2>
-                <p>Kontaktirajte me za brezplačen posvet in strokovno svetovanje</p>
+                <h2>POTREBUJETE POMOČ PRI IZVRŠBI ALI INSOLVENTNOSTI?</h2>
+                <p>Kontaktirajte me za brezplačen posvet pri izterjavi terjatev ali reševanju prezadolženosti</p>
             </div>
             <div class="cta-phone">
                 <i class="fas fa-phone-alt"></i>
@@ -225,7 +251,7 @@
                     <div class="social-links">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="mailto:info@ribic-arh.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="mailto:info@ribiclaw.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
                 <div class="footer-column">
@@ -246,17 +272,14 @@
                         <li><a href="index.html#about">O meni</a></li>
                         <li><a href="index.html#practice">Storitve</a></li>
                         <li><a href="index.html#contact">Kontakt</a></li>
-                        <li><a href="https://ribiclaw.com" target="_blank">Spletna stran</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>KONTAKT</h3>
                     <ul class="contact-info">
-                        <li><i class="fas fa-map-marker-alt"></i> Tomšičeva ulica 1<br>1000 Ljubljana, Slovenija</li>
-                        <li><i class="fas fa-phone"></i> +386 31 633 663</li>
-                        <li><i class="fas fa-envelope"></i> info@ribic-arh.com</li>
-                        <li><i class="fas fa-envelope"></i> odvetnik.leon.ribic@gmail.com</li>
-                        <li><i class="fas fa-clock"></i> Pon - Pet: 9:00 - 17:00</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Odvetnik Leon Ribič<br>Tomšičeva ulica 1<br>1000 Ljubljana</li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info.com">info.com</a></li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+38631633663">+386 31 633 663</a></li>
                     </ul>
                 </div>
             </div>
@@ -264,6 +287,9 @@
                 <p>&copy; 2024 Odvetniška pisarna Leon Ribič. Vse pravice pridržane. | Vpisan v imenik Odvetniške zbornice Slovenije</p>
             </div>
         </div>
+
+        <!-- AI Agent Chat Widget -->
+        <script src="https://sogymswkppapgobreycf.supabase.co/functions/v1/widget/dbb506b1-d793-49d2-90c4-8c8664b25384/widget.js?v=1764936603125" async></script>
     </footer>
 
     <script src="script.js"></script>

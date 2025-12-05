@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Debug</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .hamburger {
+            width: 50px;
+            height: 50px;
+            background: red;
+            border: 3px solid black;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .hamburger-line {
+            width: 30px;
+            height: 3px;
+            background: black;
+            pointer-events: none;
+        }
+
+        #status {
+            margin-top: 20px;
+            padding: 10px;
+            background: #f0f0f0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>SIMPLE HAMBURGER TEST</h1>
+    <p>Click the red square below:</p>
+
+    <button class="hamburger" id="hamburger">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </button>
+
+    <div id="status">Status: Waiting for click...</div>
+
+    <script>
+        console.log('Script starting...');
+
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM loaded');
+
+            const hamburger = document.getElementById('hamburger');
+            const status = document.getElementById('status');
+
+            console.log('Hamburger:', hamburger);
+
+            if (!hamburger) {
+                status.innerHTML = 'ERROR: Button not found!';
+                status.style.background = 'red';
+                status.style.color = 'white';
+                return;
+            }
+
+            status.innerHTML = 'Status: Button found. Waiting for click...';
+            status.style.background = 'yellow';
+
+            hamburger.addEventListener('click', function() {
+                console.log('CLICKED!!!');
+                status.innerHTML = 'Status: ✅ CLICKED! It works!';
+                status.style.background = 'green';
+                status.style.color = 'white';
+            });
+
+            console.log('Event listener added');
+        });
+    </script>
+</body>
+</html>

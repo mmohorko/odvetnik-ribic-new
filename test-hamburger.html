@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Menu Test</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: white;
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0A2540;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        /* Hamburger */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 30px;
+            height: 25px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            z-index: 1001;
+        }
+
+        .hamburger-line {
+            width: 100%;
+            height: 3px;
+            background-color: #333;
+            transition: all 0.3s ease;
+            border-radius: 3px;
+        }
+
+        .hamburger.active .hamburger-line:nth-child(1) {
+            transform: rotate(45deg) translate(8px, 8px);
+        }
+
+        .hamburger.active .hamburger-line:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active .hamburger-line:nth-child(3) {
+            transform: rotate(-45deg) translate(8px, -8px);
+        }
+
+        /* Mobile Menu */
+        @media (max-width: 1024px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background: rgba(255, 255, 255, 0.98);
+                flex-direction: column;
+                padding: 20px;
+                transition: left 0.3s ease;
+                overflow-y: auto;
+                box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .nav-menu li {
+                width: 100%;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-menu li a {
+                display: block;
+                padding: 15px 10px;
+                font-size: 16px;
+            }
+        }
+
+        .content {
+            margin-top: 100px;
+            padding: 20px;
+        }
+
+        .test-info {
+            background: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .status {
+            background: #4CAF50;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">TEST LOGO</div>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="#home">DOMOV</a></li>
+                        <li><a href="#about">O MENI</a></li>
+                        <li><a href="#services">STORITVE</a></li>
+                        <li><a href="#contact">KONTAKT</a></li>
+                    </ul>
+                    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div class="test-info">
+            <h1>🔧 Hamburger Menu Test Page</h1>
+            <p><strong>Instructions:</strong></p>
+            <ol>
+                <li>Resize your browser window to less than 1024px width (or use mobile device)</li>
+                <li>The hamburger icon (3 lines) should appear on the right</li>
+                <li>Click the hamburger icon - menu should slide in from left</li>
+                <li>Click again - menu should slide out</li>
+                <li>When menu is open, click any link - menu should close</li>
+            </ol>
+            <div class="status" id="status">✅ Test page loaded successfully</div>
+        </div>
+
+        <h2>Debug Information</h2>
+        <div id="debug"></div>
+    </div>
+
+    <script>
+        // Hamburger Menu Toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.getElementById('navMenu');
+            const debugDiv = document.getElementById('debug');
+            const statusDiv = document.getElementById('status');
+
+            // Debug info
+            debugDiv.innerHTML = `
+                <p>Hamburger element found: ${hamburger ? '✅ YES' : '❌ NO'}</p>
+                <p>Nav menu element found: ${navMenu ? '✅ YES' : '❌ NO'}</p>
+                <p>Window width: ${window.innerWidth}px</p>
+                <p>Mobile mode active: ${window.innerWidth <= 1024 ? '✅ YES' : '❌ NO'}</p>
+            `;
+
+            if (!hamburger || !navMenu) {
+                statusDiv.innerHTML = '❌ ERROR: Elements not found!';
+                statusDiv.style.background = '#f44336';
+                return;
+            }
+
+            hamburger.addEventListener('click', function() {
+                console.log('Hamburger clicked!');
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+                document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+
+                statusDiv.innerHTML = navMenu.classList.contains('active') ?
+                    '✅ Menu is OPEN' : '✅ Menu is CLOSED';
+            });
+
+            // Close menu when clicking a link
+            const navLinks = navMenu.querySelectorAll('a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                    document.body.style.overflow = '';
+                    statusDiv.innerHTML = '✅ Menu closed (link clicked)';
+                });
+            });
+
+            statusDiv.innerHTML = '✅ JavaScript initialized successfully';
+        });
+
+        // Window resize debug
+        window.addEventListener('resize', function() {
+            const debugDiv = document.getElementById('debug');
+            debugDiv.innerHTML = `
+                <p>Hamburger element found: ✅ YES</p>
+                <p>Nav menu element found: ✅ YES</p>
+                <p>Window width: ${window.innerWidth}px</p>
+                <p>Mobile mode active: ${window.innerWidth <= 1024 ? '✅ YES' : '❌ NO'}</p>
+            `;
+        });
+    </script>
+</body>
+</html>

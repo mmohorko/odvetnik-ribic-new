@@ -41,6 +41,22 @@
                         </li>
                         <li><a href="kontakt.html">KONTAKT</a></li>
                     </ul>
+                    <div class="mobile-menu-contact">
+                        <a href="tel:+38631633663" class="mobile-contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <div class="contact-label">Telefon</div>
+                                <div class="contact-value">+386 31 633 663</div>
+                            </div>
+                        </a>
+                        <a href="mailto:info@ribiclaw.com" class="mobile-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value">info@ribiclaw.com</div>
+                            </div>
+                        </a>
+                    </div>
                     <div class="header-actions">
                         <a href="tel:+38631633663" class="header-phone">
                             <i class="fas fa-phone-alt"></i>
@@ -48,8 +64,10 @@
                         </a>
                         <button class="btn-gold" onclick="window.location.href='kontakt.html#contact-form'">BREZPLAČEN POSVET</button>
                     </div>
-                    <button class="mobile-menu-toggle">
-                        <i class="fas fa-bars"></i>
+                    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
                     </button>
                 </div>
             </div>
@@ -295,8 +313,8 @@
                 <div class="footer-column">
                     <div class="footer-logo">
                         <div class="logo-text">
-                            <span class="logo-main">LEON RIBIČ</span>
-                            <span class="logo-subtitle">ODVETNIK</span>
+                            <span class="logo-main" style="color: #D4AF37; font-weight: 800;">LEON RIBIČ</span>
+                            <span class="logo-subtitle" style="color: #999;">ODVETNIK</span>
                         </div>
                     </div>
                     <p class="footer-about">
@@ -306,7 +324,7 @@
                     <div class="social-links">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="mailto:info@ribic-arh.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="mailto:info@ribiclaw.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
                 <div class="footer-column">
@@ -327,17 +345,14 @@
                         <li><a href="#about">O meni</a></li>
                         <li><a href="#practice">Storitve</a></li>
                         <li><a href="#contact">Kontakt</a></li>
-                        <li><a href="https://ribiclaw.com" target="_blank">Spletna stran</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>KONTAKT</h3>
                     <ul class="contact-info">
-                        <li><i class="fas fa-map-marker-alt"></i> Tomšičeva ulica 1<br>1000 Ljubljana, Slovenija</li>
-                        <li><i class="fas fa-phone"></i> +386 31 633 663</li>
-                        <li><i class="fas fa-envelope"></i> info@ribic-arh.com</li>
-                        <li><i class="fas fa-envelope"></i> odvetnik.leon.ribic@gmail.com</li>
-                        <li><i class="fas fa-clock"></i> Pon - Pet: 9:00 - 17:00</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Odvetnik Leon Ribič<br>Tomšičeva ulica 1<br>1000 Ljubljana</li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@ribiclaw.com">info@ribiclaw.com</a></li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+38631633663">+386 31 633 663</a></li>
                     </ul>
                 </div>
             </div>
@@ -345,6 +360,9 @@
                 <p>&copy; 2024 Odvetniška pisarna Leon Ribič. Vse pravice pridržane. | Vpisan v imenik Odvetniške zbornice Slovenije</p>
             </div>
         </div>
+
+        <!-- AI Agent Chat Widget -->
+        <script src="https://sogymswkppapgobreycf.supabase.co/functions/v1/widget/dbb506b1-d793-49d2-90c4-8c8664b25384/widget.js?v=1764936603125" async></script>
     </footer>
 
     <script src="script.js"></script>
